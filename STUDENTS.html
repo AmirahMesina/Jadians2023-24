@@ -1,0 +1,816 @@
+
+<html>
+<head>
+    <title>Students</title>
+    <style>
+
+<html>
+<head>
+    <title>Jadians Classroom Agenda</title>
+ <style>
+
+
+    * {
+        box-sizing: border-box; 
+     }
+
+   body {
+    overflow: visible;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(green.jpg);
+    opacity: 0.60;
+    z-index: -1;
+     }
+
+    nav {
+        background-color: #50623A;
+        width: 100%;
+        overflow: auto;
+        position: fixed;
+        }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+       }
+
+    li { 
+        display: inline-block;
+       }
+
+    nav a {
+            display: block;
+            width: 120px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: Arial;
+          }
+
+    header {
+            background-color: #789461;
+            margin-top: 0%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            }
+
+        footer {
+            background-color: #789461;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 0%;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    h1      {
+             font-size: 75px;
+             font-weight: bold;
+             display: flex;
+             align-items: center;
+             margin-bottom: 5px;
+             line-height: 1.2;
+             margin-top: 0;
+             font-family: Sugarpunch-DEMO;
+             color: white;
+             text-shadow: 4px 4px 10px rgba(255, 215, 0, 1);
+            }
+
+    .vertwo {
+            font-size: 55px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        .footer-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-icons a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px; 
+        }
+
+        .footer-icons i {
+            margin-right: 10px;
+        }
+
+
+    img {
+            width: 180px;
+            height: 180px;
+            margin-right: 10px;
+        }
+
+    .title {
+        text-align: center;
+        }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #50623A;
+        font-family: Arial;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #789461;
+        font-family: Arial;
+        margin: 0;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #50623A;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #789461;
+        min-width: 160px;
+        box-shadow: opx 8px 16px 0px rgba(0,0,0,0,2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #50623A;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #image-track > .image {
+        width: 40min;
+        height: 56min;
+        object-fit: cover;
+        object-position: center;
+    }
+         
+    #image-track { display: flex;
+            gap: 4vmin;
+            position: absolute;
+            left: 50%;
+            top: 50%
+            }
+
+    .Pics  {
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            }
+
+
+    main {
+      background-color; white;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+      text-align: center;
+      padding: 20px;
+    }
+
+   .paraver {
+      font-size: 20px;
+      }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            overflow: visible;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0; /* Remove default margin */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(green.jpg);
+            opacity: 0.60;
+            z-index: -1;
+        }
+
+        nav {
+            background-color: #50623A;
+            width: 100%;
+            overflow: auto;
+            position: fixed;
+            z-index: 1000; /* Set z-index to make it visible above other elements */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        nav a {
+            display: block;
+            width: 120px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #789461;
+            margin-top: 0%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #789461;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 0%;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 75px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            margin-top: 0;
+            font-family: Sugarpunch-DEMO;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(255, 215, 0, 1);
+        }
+
+        .vertwo {
+            font-size: 55px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        .footer-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-icons a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .footer-icons i {
+            margin-right: 10px;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            margin-right: 10px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #50623A;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #789461;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #50623A;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #789461;
+            min-width: 160px;
+            box-shadow: opx 8px 16px 0px rgba(0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #50623A;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #image-track > .image {
+            width: 40min;
+            height: 56min;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #image-track {
+            display: flex;
+            gap: 4vmin;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .Pics {
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            background-color: white;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .paraver {
+            font-size: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 75px;
+            flex-wrap: wrap; /* Added flex-wrap for responsive layout */
+        }
+
+        .image {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        .image:hover .content {
+            opacity: 1;
+        }
+
+        .content h1 {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .content p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #8BC34A;
+        }
+
+        .content > * {
+            transform: translateY(25px);
+            transition: transform 0.6s;
+        }
+
+        .content:hover > * {
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="Pics" src="Jade.png">
+       <div class="title">
+        <h1>JADIANS NG SCI-HIGH 23-24</h1>
+       </div>
+    </header>
+  <div class="navbar">
+          <a href="HOME.html">HOME</a>
+          <a href="SCHED.html">SCHEDULE</a>
+          <a href="new.html">MEMORIES</a>
+        <div class="dropdown">
+             <button class="dropbtn">US
+            <i class="fa fa-caret-down"></i>
+             </button>
+              <div class="dropdown-content">
+                <a href="STUDENTS.html">STUDENTS</a>
+                <a href="TEACHERS.html">TEACHERS</a>
+                <a href="OFFICERS.html">OFFFICERS</a>
+              </div>
+        </div>
+ </div>
+<h2 class="section-header">Boys</h2>
+<div class="wrapper">
+
+      <div class="image">
+        <img src="ALEJO.jpg">
+        <div class="content">
+            <h1>John David T. Alejo</h1>
+            <p>"JD/Alejo"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="CLEMENTE.jpg">
+        <div class="content">
+            <h1>Prince Timothy S. Clemente</h1>
+            <p>"Prince/Timothy"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="CORPUZ.jpg">
+        <div class="content">
+            <h1>Eduard John P. Corpuz</h1>
+            <p>"Edong/Eds/Edu"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="DE AFRIA.jpg">
+        <div class="content">
+            <h1>Nielle Christian G. De Afria</h1>
+            <p>"Nielle"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="GONZALES.jpg">
+        <div class="content">
+            <h1>Adrian V. Gonzales</h1>
+            <p>"Adrian"</p>
+        </div>
+    </div>
+
+
+<div class="image">
+        <img src="IDAGO.jpg">
+        <div class="content">
+            <h1>Reego C. Idago</h1>
+            <p>"Reego"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="LAGAREJOS.jpg">
+        <div class="content">
+            <h1>Chevee Miguel V. Lgarejos</h1>
+            <p>"Vee/Migs"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="MEDINA.jpg">
+        <div class="content">
+            <h1>Emrick Justin R. Medina</h1>
+            <p>"Emrick/Justin"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="ORDONIO.jpg">
+        <div class="content">
+            <h1>Carl Chester Y. Ordonio</h1>
+            <p>"Carl/Kyle"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="PADRID.jpg">
+        <div class="content">
+            <h1>Arthur Padrid</h1>
+            <p>"AJ"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="RIVERA.jpg">
+        <div class="content">
+            <h1>Casey Marley T. Rivera</h1>
+            <p>"Cas"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="SAN PEDRO.jpg">
+        <div class="content">
+            <h1>Jeremiah Rex L. San Pedro</h1>
+            <p>"Jem"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="TICMAN1.jpg">
+        <div class="content">
+            <h1>Kenneth Angelo A. Ticman</h1>
+            <p>"Neth"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="TICMAN2.jpg">
+        <div class="content">
+            <h1>Kevin Angelo A. Ticman</h1>
+            <p>"Vin"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="UMUSIG.jpg">
+        <div class="content">
+            <h1>Vergille Elisiah J. Umusig</h1>
+            <p>"Jeje"</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<h2 class="section-header">Girls</h2>
+<div class="wrapper">
+
+    <div class="image">
+        <img src="ABALOS.jpg">
+        <div class="content">
+            <h1>Ace Jana T. Abalos</h1>
+            <p>"Ace/Jana"</p>
+        </div>
+    </div>
+
+  <div class="image">
+        <img src="AQUINO.jpg">
+        <div class="content">
+            <h1>Ahlex C. Aquino</h1>
+            <p>"Leexa/Alexa/Lex"</p>
+        </div>
+    </div>
+
+  <div class="image">
+        <img src="ARAYAN.jpg">
+        <div class="content">
+            <h1>Chloe M. Arayan</h1>
+            <p>"Chloe"</p>
+        </div>
+    </div>
+
+
+  <div class="image">
+        <img src="ESGUERRA.jpg">
+        <div class="content">
+            <h1>Ziana Raisa Venice Esguerra</h1>
+            <p>"Z/Zia/Yana/Raisa"</p>
+        </div>
+    </div>
+
+  <div class="image">
+        <img src="ESTIPONA.jpg">
+        <div class="content">
+            <h1>Valerie S. Estipona</h1>
+            <p>"Val"</p>
+        </div>
+    </div>
+
+  <div class="image">
+        <img src="GERONGA.jpg">
+        <div class="content">
+            <h1>Alliyah Kyle E. Geronga</h1>
+            <p>"Ali/Kyle/Iyah"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="IMPERIAL.jpg">
+        <div class="content">
+            <h1>Julianne Angeli A. Imperial</h1>
+            <p>"Ali/Kyle/Iyah"</p>
+        </div>
+    </div>
+
+
+ <div class="image">
+        <img src="JURIA.jpg">
+        <div class="content">
+            <h1>Ruejen Ycee T. Juria</h1>
+            <p>"Ali/Kyle/Iyah"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="MESINA.jpg">
+        <div class="content">
+            <h1>Amirah Joy S. Mesina</h1>
+            <p>"Ami/Mira"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="OLAR.jpg">
+        <div class="content">
+            <h1>Jurrise Hilary C. Olar</h1>
+            <p>"Jur/Hilary"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="PUNZALAN.jpg">
+        <div class="content">
+            <h1>Lianne Jade B. Punzalan</h1>
+            <p>"Li/Jade/Lianne/LJ"</p>
+        </div>
+    </div>
+
+ <div class="image">
+        <img src="SARMENTA.jpg">
+        <div class="content">
+            <h1>Jesserean Dianne D.C Sarmenta</h1>
+            <p>"Jess/Dianne/Rean"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="SERRANO.jpg">
+        <div class="content">
+            <h1>Reehzyel Maryxyreen E. Serrano</h1>
+            <p>"Reez/Ree/Mary"</p>
+        </div>
+    </div>
+
+<div class="image">
+        <img src="WILLIAMS.jpg">
+        <div class="content">
+            <h1>Carlene Joyce R. Williams</h1>
+            <p>"Carlene"</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

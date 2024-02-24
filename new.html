@@ -1,0 +1,498 @@
+<html>
+<head>
+    <title>Memories</title>
+    <style>
+
+    * {
+        box-sizing: border-box; 
+     }
+
+   body {
+    overflow: visible;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(green.jpg);
+    opacity: 0.60;
+    z-index: -1;
+     }
+
+    nav {
+        background-color: #50623A;
+        width: 100%;
+        overflow: auto;
+        position: fixed;
+        }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+       }
+
+    li { 
+        display: inline-block;
+       }
+
+    nav a {
+            display: block;
+            width: 120px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: Arial;
+          }
+
+    header {
+            background-color: #789461;
+            margin-top: 0%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            }
+
+        footer {
+            background-color: #789461;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 0%;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    h1      {
+             font-size: 75px;
+             font-weight: bold;
+             display: flex;
+             align-items: center;
+             margin-bottom: 5px;
+             line-height: 1.2;
+             margin-top: 0;
+             font-family: Sugarpunch-DEMO;
+             color: white;
+             text-shadow: 4px 4px 10px rgba(255, 215, 0, 1);
+            }
+
+    .vertwo {
+            font-size: 55px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+
+        .footer-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-icons a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px; 
+        }
+
+        .footer-icons i {
+            margin-right: 10px; 
+        }
+
+
+    img {
+            width: 180px;
+            height: 180px;
+            margin-right: 10px;
+        }
+
+    .title {
+        text-align: center;
+        }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #50623A;
+        font-family: Arial;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #789461;
+        font-family: Arial;
+        margin: 0;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #50623A;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #789461;
+        min-width: 160px;
+        box-shadow: opx 8px 16px 0px rgba(0,0,0,0,2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #50623A;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #image-track > .image {
+        width: 40min;
+        height: 56min;
+        object-fit: cover;
+        object-position: center;
+    }
+         
+    #image-track { display: flex;
+            gap: 4vmin;
+            position: absolute;
+            left: 50%;
+            top: 50%
+            }
+
+    .Pics  {
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            }
+    p {font-size: 30px;
+            }
+
+    main {
+      background-color; white;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+      text-align: center;
+      padding: 20px;
+    }
+
+        body {
+            background-color: #d1ffd1; 
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #006400; 
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .memories {
+            margin: 5px;
+            border: 2px solid #228B22; 
+            width: calc(33.33% - 10px); 
+            background-color: #98FB98; 
+            position: relative;
+            overflow: hidden; 
+            display: inline-block;
+        }
+
+        .memories img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #228B22; 
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #006400;
+        }
+
+        .hover-content {
+            position: absolute;
+            top: 0;
+            left: 100%; 
+            width: 100%;
+            height: 100%;
+            background: rgba(152, 251, 152, 0.9); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.5s ease;
+        }
+
+        .memories:hover .hover-content {
+            left: 0; 
+        }
+
+        .hover-content img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+        <img class="Pics" src="Jade.png">
+       <div class="title">
+        <h1>JADIANS NG SCI-HIGH 23-24</h1>
+       </div>
+    </header>
+  <div class="navbar">
+          <a href="HOME.html">HOME</a>
+          <a href="SCHED.html">SCHEDULE</a>
+          <a href="new.html">MEMORIES</a>
+        <div class="dropdown">
+             <button class="dropbtn">US
+            <i class="fa fa-caret-down"></i>
+             </button>
+              <div class="dropdown-content">
+                <a href="#">STUDENTS</a>
+                <a href="#">TEACHERS</a>
+                <a href="#">OFFFICERS</a>
+              </div>
+        </div>
+ </div>
+
+<hr>
+    <div class="title">CLASSROOM MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="CM 1.jpg">
+            <div class="desc">Recess Time</div>
+            <div class="hover-content">
+                <img src="CM.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="CMBSMCT 2.jpg">
+            <div class="desc">Before going to SM City</div>
+            <div class="hover-content">
+                <img src="CMBSMCT.jpg">
+            </div>
+        </div>
+
+       <div class="memories">
+            <img src="CMWMAAMPADIE 2.jpg">
+            <div class="desc">Selfie with ma'am Padie!</div>
+            <div class="hover-content">
+                <img src="CMWMAAMPADIE.jpg">
+            </div>
+        </div>
+
+
+       <div class="memories">
+            <img src="PLABM.jpg">
+            <div class="desc">Physics Lab moment XD</div>
+            <div class="hover-content">
+                <img src="PLABM 3.jpg">
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<div class="title">OUTSIDE THE SCHOOL MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="SMCT 2.jpg">
+            <div class="desc">On the way to SM!!</div>
+            <div class="hover-content">
+                <img src="SMCT 4.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="SMCT 3.jpg">
+            <div class="desc">Broom! Broom!</div>
+            <div class="hover-content">
+                <img src="SMCT 5.jpg">
+            </div>
+        </div>
+
+       <div class="memories">
+            <img src="SMCTTRIO.jpg">
+            <div class="desc">Mga busy moments</div>
+            <div class="hover-content">
+                <img src="SMCT 1.jpg">
+            </div>
+        </div>
+
+ <div class="memories">
+            <img src="EDUTOUR.jpg">
+            <div class="desc">Educational Tour</div>
+            <div class="hover-content">
+                <img src="EDUTOUR 3.jpg">
+            </div>
+        </div>
+
+    </div>
+
+<hr>
+
+<div class="title">TEACHER's DAY MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="MAAMKASHIETD 3.jpg">
+            <div class="desc">Ma'am  Kashieca 𓍢ִ໋🌷֒𓍢ִ໋</div>
+            <div class="hover-content">
+                <img src="MAAMKASHIETD.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="MAAMSANDIETD.jpg">
+            <div class="desc">Ma'am Sandie👩🏻‍🔬</div>
+        </div>
+
+       <div class="memories">
+            <img src="MAAMLILYTD.jpg">
+            <div class="desc">Ma'am Lilybeth📝</div>
+        </div>
+
+ <div class="memories">
+            <img src="MAAMGINATD.jpg">
+            <div class="desc">Ma'am Gina📜</div>
+            <div class="hover-content">
+                <img src="MAAMGINATD 2.jpg">
+            </div>
+        </div>
+
+ <div class="memories">
+            <img src="MAAMMARIBELTD 2.jpg">
+            <div class="desc">Ma'am Maribel⚖️</div>
+            <div class="hover-content">
+                <img src="MAAMMARIBELTD.jpg">
+            </div>
+        </div>
+
+
+ <div class="memories">
+            <img src="SENIORAGLADYSTD.jpg">
+            <div class="desc">Señora Gladys💃</div>
+        </div>
+
+ <div class="memories">
+            <img src="SIRJERICTD 2.jpg">
+            <div class="desc">Sir Jeric🖥️</div>
+            <div class="hover-content">
+                <img src="SIRJERICTD.jpg">
+            </div>
+        </div>
+
+ <div class="memories">
+            <img src="SIRJEFFTD.jpg">
+            <div class="desc">Sir Jeffson🎼🎭💪💊</div>
+        </div>
+
+<div class="container">
+    <div class="memories">
+        <video width="100%" height="315" controls>
+            <source src="8-JADE TEACHER_S DAY CELEBRATION.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+    </div>
+<hr>
+
+<div class="title">OLD JADE AND NEW JADE</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="OJXNJ.jpg">
+            <div class="desc">💕</div>
+            <div class="hover-content">
+                <img src="OJXNJ 4.jpg">
+            </div>
+         </div>
+
+
+   
+        <div class="memories">
+            <img src="OJXNJ 2.jpg">
+            <div class="desc">❣</div>
+            <div class="hover-content">
+                <img src="OJXNJ 3.jpg">
+            </div>
+    </div>
+
+<hr>
+
+<div class="title">CELEBRATIONS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="MAAMKASHIEBDAY 2.jpg">
+            <div class="desc">Ma'am Kashieca's Birthday!!</div>
+            <div class="hover-content">
+                <img src="MAAMKASHIEBDAY.jpg">
+            </div>
+         </div>
+    </div>
+
+</body></html>

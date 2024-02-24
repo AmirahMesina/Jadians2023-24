@@ -1,0 +1,194 @@
+<html>
+<head>
+    <title>Memories</title>
+    <style>
+        body {
+            background-color: #d1ffd1; 
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #006400; 
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .memories {
+            margin: 5px;
+            border: 2px solid #228B22; 
+            width: calc(33.33% - 10px); 
+            background-color: #98FB98; 
+            position: relative;
+            overflow: hidden; 
+            display: inline-block;
+        }
+
+        .memories img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #228B22; 
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #006400;
+        }
+
+        .hover-content {
+            position: absolute;
+            top: 0;
+            left: 100%; 
+            width: 100%;
+            height: 100%;
+            background: rgba(152, 251, 152, 0.9); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.5s ease;
+        }
+
+        .memories:hover .hover-content {
+            left: 0; 
+        }
+
+        .hover-content img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<hr>
+    <div class="title">CLASSROOM MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="./Memories_files/CM 1.jpg">
+            <div class="desc">Recess Time</div>
+            <div class="hover-content">
+                <img src="./Memories_files/CM.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="./Memories_files/CMBSMCT 2.jpg">
+            <div class="desc">Before going to SM City</div>
+            <div class="hover-content">
+                <img src="./Memories_files/CMBSMCT.jpg">
+            </div>
+        </div>
+
+       <div class="memories">
+            <img src="./Memories_files/CMWMAAMPADIE 2.jpg">
+            <div class="desc">Selfie with ma'am Padie!</div>
+            <div class="hover-content">
+                <img src="./Memories_files/CMWMAAMPADIE.jpg">
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<div class="title">OUTSIDE THE SCHOOL MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="./Memories_files/SMCT 2.jpg">
+            <div class="desc">On the way to SM!!</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 4.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="./Memories_files/SMCT 3.jpg">
+            <div class="desc">Broom! Broom!</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 5.jpg">
+            </div>
+        </div>
+
+       <div class="memories">
+            <img src="./Memories_files/SMCTTRIO.jpg">
+            <div class="desc">Mga busy moments</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 1.jpg">
+            </div>
+        </div>
+
+ <div class="memories">
+            <img src="./Memories_files/EDUTOUR.jpg">
+            <div class="desc">Educational Tour</div>
+            <div class="hover-content">
+                <img src="./Memories_files/EDUTOUR 3.jpg">
+            </div>
+        </div>
+
+    </div>
+
+<hr>
+
+<div class="title">TEACHER's DAY MOMENTS</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="./Memories_files/MAAMKASHIETD 3.jpg">
+            <div class="desc">Ma'am  Kashieca 𓍢ִ໋🌷֒𓍢ִ໋</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 4.jpg">
+            </div>
+        </div>
+
+        <div class="memories">
+            <img src="./Memories_files/SMCT 3.jpg">
+            <div class="desc">Broom! Broom!</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 5.jpg">
+            </div>
+        </div>
+
+       <div class="memories">
+            <img src="./Memories_files/SMCTTRIO.jpg">
+            <div class="desc">Mga busy moments</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 1.jpg">
+            </div>
+        </div>
+
+ <div class="memories">
+            <img src="./Memories_files/EDUTOUR.jpg">
+            <div class="desc">Educational Tour</div>
+            <div class="hover-content">
+                <img src="./Memories_files/EDUTOUR 3.jpg">
+            </div>
+        </div>
+
+    </div>
+
+<div class="title">OLD JADE AND NEW JADE</div>
+
+    <div class="container">
+        <div class="memories">
+            <img src="./Memories_files/SMCT 2.jpg">
+            <div class="desc">On the way to SM!!</div>
+            <div class="hover-content">
+                <img src="./Memories_files/SMCT 4.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body></html>
